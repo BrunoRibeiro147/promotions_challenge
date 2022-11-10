@@ -3,8 +3,8 @@ defmodule HorizonChallenge.Promotions.Services.UpdateProductsOnPromotionTest do
 
   alias HorizonChallenge.Promotions.Services.UpdateProductOnPromotion
 
-  alias HorizonChallenge.Schemas.Promotion
   alias HorizonChallenge.Schemas.Product
+  alias HorizonChallenge.Schemas.Promotion
 
   describe "execute/2" do
     setup do
@@ -26,12 +26,12 @@ defmodule HorizonChallenge.Promotions.Services.UpdateProductsOnPromotionTest do
 
     test "returns an error if promotion does not exist", %{product_id: product_id} do
       assert {:error, :promotion_not_found} =
-               UpdateProductOnPromotion.execute(Enum.random(1..10000), product_id)
+               UpdateProductOnPromotion.execute(Enum.random(1..10_000), product_id)
     end
 
     test "returns an error if product does not exist", %{promotion_id: promotion_id} do
       assert {:error, :product_not_found} =
-               UpdateProductOnPromotion.execute(promotion_id, Enum.random(1..10000))
+               UpdateProductOnPromotion.execute(promotion_id, Enum.random(1..10_000))
     end
   end
 end

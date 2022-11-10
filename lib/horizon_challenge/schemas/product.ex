@@ -1,4 +1,8 @@
 defmodule HorizonChallenge.Schemas.Product do
+  @moduledoc """
+  Schema for Product
+  """
+
   use Ecto.Schema
   import Ecto.Changeset
 
@@ -11,8 +15,8 @@ defmodule HorizonChallenge.Schemas.Product do
 
   @type t :: %__MODULE__{}
 
-  alias HorizonChallenge.Schemas.Promotion
   alias HorizonChallenge.Schemas.ProductPromotion
+  alias HorizonChallenge.Schemas.Promotion
 
   schema "products" do
     field(:name, :string)

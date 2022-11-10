@@ -28,7 +28,7 @@ defmodule HorizonChallenge.Checkout do
     :ok
   end
 
-  def total() do
+  def total do
     scanned_items = Agent.get(__MODULE__, &Map.get(&1, :scanned_items))
     pricing_rules = Agent.get(__MODULE__, &Map.get(&1, :pricing_rules))
 

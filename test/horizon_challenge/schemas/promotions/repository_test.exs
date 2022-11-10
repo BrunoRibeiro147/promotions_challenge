@@ -1,8 +1,8 @@
 defmodule HorizonChallenge.Schemas.Promotions.RepositoryTest do
   use HorizonChallenge.DataCase, async: true
 
-  alias HorizonChallenge.Schemas.Promotions.Repository
   alias HorizonChallenge.Schemas.Promotion
+  alias HorizonChallenge.Schemas.Promotions.Repository
 
   describe "list_promotions_by_code" do
     setup do

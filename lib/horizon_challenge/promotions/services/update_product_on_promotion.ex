@@ -3,8 +3,8 @@ defmodule HorizonChallenge.Promotions.Services.UpdateProductOnPromotion do
   Service to update the products on a promotion
   """
 
-  alias HorizonChallenge.Schemas.Promotion
   alias HorizonChallenge.Schemas.Product
+  alias HorizonChallenge.Schemas.Promotion
 
   def execute(promotion_id, product_id) do
     with {:ok, promotion} <- get_promotion(promotion_id),

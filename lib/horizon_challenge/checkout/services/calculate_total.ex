@@ -3,8 +3,8 @@ defmodule HorizonChallenge.Checkout.Services.CalculateTotal do
   Service to calculate total of a checkout
   """
 
-  alias HorizonChallenge.Schemas.Products.Repository
   alias HorizonChallenge.Promotions.Services.ApplyPromotion, as: ApplyPromotionService
+  alias HorizonChallenge.Schemas.Products.Repository
 
   def execute(scanned_items, pricing_rules) do
     scanned_items

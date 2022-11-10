@@ -1,4 +1,8 @@
 defmodule HorizonChallenge.Schemas.Promotion do
+  @moduledoc """
+  Schema for Promotion
+  """
+
   use Ecto.Schema
   import Ecto.Changeset
 

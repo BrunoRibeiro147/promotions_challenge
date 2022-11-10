@@ -6,7 +6,6 @@ defmodule HorizonChallenge.Schemas.Promotions.Repository do
   import Ecto.Query
 
   alias HorizonChallenge.Schemas.Promotion
-
   alias HorizonChallenge.Schemas.Promotions.Query
 
   @doc """
