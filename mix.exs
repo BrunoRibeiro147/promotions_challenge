@@ -59,7 +59,8 @@ defmodule HorizonChallenge.MixProject do
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
       {:ex_machina, "~> 2.7.0", only: :test},
       {:money, "~> 1.11"},
-      {:excoveralls, "~> 0.10", only: :test}
+      {:excoveralls, "~> 0.10", only: :test},
+      {:sobelow, "~> 0.8", only: :dev}
     ]
   end
 
